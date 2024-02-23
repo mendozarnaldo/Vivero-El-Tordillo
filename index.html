@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---link css-->
+    
+    <!---link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!---link css-->
+    <link rel="stylesheet" href="css/estilo.css">
+    
+    <title>Vivero El Tordillo</title>
+</head>
+<body>
+    <!---header-->
+    <header>
+      <nav class="navbar navbar-expand-md bg-darkbrown">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Vivero El Tordillo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end bg-lightbrown" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Vivero El Tordillo </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#quienes-somos">Quienes somos</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="#productos">Productos</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li> 
+               
+      
+                  </ul>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+   
+
+    </header>
+
+    <!---main-->
+    <main id="quienes-somos">
+      <section class="hero">
+        <article class="hero-content">
+          <h1 class="text-darkbrown mix-blend-diference">Bienvenidos</h1>
+          <p class="text-darkbrown mix-blend-diference">Su principal destino para todo lo relacionado a la jardinería y el paisajismo. Ubicado en Florencio Varela, nos dedicamos a brindar productos de alta calidad y asesoramiento experto para ayudarlo a crear el jardín de sus sueños.</p>
+          <button class="btn btn-primary">Compra Ahora</button>
+        </article> 
+      </section>
+
+      <section id="productos" class="row justify-content-around my-5">
+        <article class="col-12 py-5">
+          <h2 class="text-center"> Proyectos </h2>
+        </article>
+
+        <article class="card col-md-4 my-5">
+          <img src="img/cultivo-productor.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cultivo Productor</h5>
+            <p class="card-text">Contamos con nuestros propios cultivos productores de frutales cítricos, de carozo y de pepita, arbustos, como así también todo lo referente a un amplio surtido de árboles, para satisfacer la demanda, logística y distribución de nuestros productos y servicios a nuestros clientes.</p>
+            <a href="#" class="btn btn-primary">Más Información</a>
+          </div>
+        </article>
+
+        <article class="card col-md-4 my-5">
+          <img src="img/experiencia-y-capacidad.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Experiencia y Capacidad</h5>
+            <p class="card-text">Con 20 años en el Mercado, somos proveedores mayoristas con más de 200 Clientes en Buenos Aires y Gran Buenos Aires, Entre Ríos, Chaco, Corrientes, Costa Atlántica, Mendoza y Córdoba.</p>
+            <a href="#" class="btn btn-primary">Más Información</a>
+          </div>
+        </article>
+
+        <article class="card col-md-4 my-5">
+          <img src="img/nuestras-plantas.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nuestras Plantas</h5>
+            <p class="card-text">Con pasión por nuestras plantas y compromiso con la satisfacción del cliente, Vivero El Tordillo es su recurso de referencia para todas sus necesidades de jardinería. Si es un jardinero experimentado o recién comienza, estamos aquí para apoyarlo e inspirarlo en su viaje ecológico</p>
+            <a href="#" class="btn btn-primary">Más Información</a>
+          </div>
+        </article>
+
+
+
+      </section>
+    </main>
+
+    <!---footer-->
+  
+      <footer id="contacto">
+        <p class="text-center">Comuníquese con nosotros utilizando el formulario de contacto a continuación. Esperamos tener noticias suyas y ayudarlo con sus necesidades de construcción.</p>
+        <form action="/enviar_form" method="post">
+            <label for="fname">Nombre</label>
+            <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+           
+            <label for="lname">Apellido</label>
+            <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+           
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Tu correo electrónico..">
+           
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí.." style="height:200px"></textarea>
+           
+            <input type="enviar" value="Enviar">
+           </form>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2543056640257!2d-58.31780172564104!3d-34.79954336786422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32b863271f6b9%3A0x92fb0378a115ea2a!2sEl%20Tordillo%2C%20Gdor.%20Costa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1704774063074!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+            <img class="logo" src="img/logo.png" alt="">
+            <img class="Instagram" src="img/instagram.png" alt="">
+            <img class="Facebook" src="img/facebook.jpg" alt="">
+            <img class="youtube" src="img/youtube.png" alt="">
+            </div>
+    </footer>
+    
+    <!---link scrip bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

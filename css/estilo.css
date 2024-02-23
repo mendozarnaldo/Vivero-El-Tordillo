@@ -1,0 +1,254 @@
+.bg-darkbrown{
+    background-color: rgb(139, 87, 47);
+}
+
+.bg-lightbrown{
+    background-color: rgb(172, 131, 99);
+}
+
+.text-darkbrown{
+    color: rgb(139, 87, 47);
+}
+
+.hero{
+    background-image: url(../img/mayorista-y-minorista.png);
+    background-size: cover;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.701);
+    }
+.mix-blend-diference{
+    mix-blend-mode: difference;
+}
+
+
+.hero-content h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.hero-content p{
+    font-size: 24px;
+    width: 60%;
+}
+
+.btn-primary{
+    background-color: rgb(139, 87, 47);
+    color: #111;
+    font-size: 24px;
+    width: 200px;
+    border-color: rgb(139, 87, 47);
+    border-radius: 0;   
+}
+
+.btn-primary:hover{
+    background-color: #111;
+    color: rgb(139, 87, 47);
+    border-color: rgb(139, 87, 47);
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: #111;
+    color: rgb(139, 87, 47);
+    border-color: rgb(139, 87, 47);
+}
+
+.row{
+    margin: 0;
+}
+
+.card{
+    width: 260px;
+    border-radius: 100;
+    border: 2px rgb(139, 87, 47); 
+    padding: 0;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.card-img-top{
+    width: 100%;
+    border-radius: 0;
+    filter: blur(5px);
+    transition: .4s;
+}
+
+.card:hover {
+    background-color:rgb(139, 87, 47);
+    color: #111;
+    box-shadow: 3px 3px 3px #111;
+}
+
+.card:hover .btn-primary{
+    border: 1px solid #111;
+    box-shadow: 3px 3px 3px #fcfbfb;
+}
+
+.card:hover .card-img-top{
+    filter: blur(0);
+}
+
+.nav-link,
+.navbar-brand{
+    font-size: 24px;
+    font-weight: bold;
+    transition: .4s;
+    padding: 5px;
+    border: 2px solid #111;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+@media(max-width:480px){
+    .hero{
+        height: 800px;
+    }
+    .hero-content{
+        padding: 15px;
+    }
+    .hero-content p{
+        width: 100%;
+    }
+}
+
+/***footer***/
+
+.flex-proyectos{
+    margin: 20px;
+    padding: 20px;    
+    display: flex;
+    height: 200px;
+    text-align: center;
+    background-color: rgb(232, 222, 205);
+  }
+  
+  .flex-proyectos > div {
+  
+      background-color: rgb(232, 222, 205);
+    
+      width: 50px;
+    
+      margin: -10px;
+  
+      padding: 10px;
+    
+      text-align: center;
+  
+      justify-content: space-between;
+    
+      line-height: 20px;
+    
+      font-size: 17px;
+    
+      flex: 1 1 200px
+  }
+
+
+/* Iframe*/
+
+iframe{
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    float: center;
+}
+
+/* Formulario */
+form {
+    margin: 30px;
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+label {
+    font-size: 1.5em;
+
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=Enviar] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+    /* Redes */
+
+    .Facebook{
+        margin: 5px;
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50px;
+        height: 50px;
+        float: right;
+        border-radius: 10px;
+    }
+
+    .Instagram{
+        margin: 5px;
+        width: 10%;
+        display: flex;
+        width: 50px;
+        height: 50px;
+        float: right;
+    }
+    .youtube{
+        margin: 5px;
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50px;
+        height: 50px;
+        float: right;
+    }
+    .logo{
+        background-image: url(../img/logo.png);
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }    
+
+.bg-darkbrown{
+    background-color: #6d5a3d;
+}
+    
+.bg-lightbrown{
+    background-color: rgb(232, 222, 205);
+}
